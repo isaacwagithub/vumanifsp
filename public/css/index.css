@@ -216,14 +216,15 @@ a.btn-theme2{
     margin: 0;
     padding: 0;
     height: auto;
-    border: 0;
+    /* border: 0; */
 }
 .servicesCardHolder .card .card-header{
-    
+    border: 1px solid #bebcbc !important;
 }
 .servicesCardHolder .card .card-footer p{
     text-align: left !important;
 }
+
 .home .card{
     width: 100%;
     margin: 0;
@@ -239,11 +240,8 @@ a.btn-theme2{
 }
 .home .card .card-header h5{
     text-align: left;
-    color: #102b01 !important;
     font-size: large;
     font-weight: 500;
-    opacity: .93;
-    
 }
 .home .card .card-body{
    margin: 0;
@@ -346,7 +344,31 @@ ul.partnerslist li img.faces{
     border: 0;
     background: #ffffff;
 }
+.servicesCardHolder .card-header{
+    background: #102b01 !important;
+    color: #ffffff !important;
+    opacity: 1;
+}
+.servicesCardHolder .card-header h5{
+    font-weight: 500 !important;
+    padding-left: 4%;
+    text-align: left;
+    color: #ffffff !important;
+    opacity: 1;
+
+}
+.servicesCardHolder .card-header h5 span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    float: left;
+    background: #102b01;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-top: 10px;
+}
 /*About us styles*/
+
 .aboutus .row h3{
     display: block;
     width: 100%;
@@ -360,8 +382,7 @@ ul.partnerslist li img.faces{
 }
 .about_us div.about_block{
 	background: rgba(255,255,255,.65);
-	height: auto;
-	border: 3px solid #999;
+	height: auto !important;
 }
 .about_us div.about_block p{
     padding: 1%;
@@ -374,10 +395,40 @@ ul.partnerslist li img.faces{
 	padding: 0;
 	list-style: none;
 }
+.about_block .card .card-body p span{
+    width: 8px;
+    height: 8px;
+    background: #102b01;
+    margin-top: 2px;
+    border-radius: 50%;
+}
+.smallerblock{
+    height: 500px !important;
+}
 .aboutus ul.ul_offers li{
     border: none;
     padding-left: 2%;
     width: 100%;
+}
+ul.ppictures{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.ppictures li{
+    display: block;
+    float: left;
+    width: 14% !important;
+    height: 100px;
+    margin: 0 !important;
+    margin-right: 1% !important;
+    padding: 0 !important;
+}
+ul.ppictures li img{
+    width: 100% !important;
+    height: 80px;
+    border-radius: 50%;
 }
 ul.ul_offers{
     list-style: circle;
@@ -388,7 +439,7 @@ ul.ul_offers li{
     border: none;
 }
 ul.ul_offers li p{
-    padding-left: 2%;
+    padding-left: 0% !important;
 }
 ul.ul_offers li p span{
     display: inline-block;
@@ -412,19 +463,34 @@ ul.ul_offers li p span{
 .aboutus ul li{
 	display: block;
 	float: left;
-	width: 44%;
+	width: 49%;
 	height: auto;
 	margin: 0 1% 1% 0;
 	padding: 0;
-    border: 3px solid #c4c4c4;
 }
-.aboutus ul li .card{
+.ul_cards li div.card{
+    border: 1px solid #999999 !important;
 	background: none;
 	border: none;
 }
-
-.aboutus ul li .card .card-body img{
-	width: 50%;
+.ul_cards li div.card .card-header{
+    background: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid #999999;
+}
+.ul_cards li div.card .card-header img.card-img-top{
+    width: 50% !important;
+    height: 134px;
+    margin: 4% 25% !important;
+    padding: 0 !important;
+    border-radius: 50%;
+}
+.ul_cards li div.card .card-img-top img{
+    width: 20% !important;
+}
+.aboutus ul li .card .card-img-top img{
+	width: 20%;
 	height: 100px;
 	margin: 16% 25% 1% 25%;
 	border-radius: 0%;
@@ -522,7 +588,7 @@ ul.ul_offers li p span{
 }
 .tab_active{
     background: #4d990c!important;
-    color: #fff!important;
+    color: #ffffff!important;
     border-radius: 0;
     border: 2px solid #4d990c!important;
 }
@@ -596,6 +662,16 @@ ul.service_li li{
     width: 100%;
     border: 2px solid #777;
     height: 460px;
+}
+.services ul#ulOffers h5,.services ul#ulOffers li h4{
+    font-weight: 600;
+    color: #555555!important;
+}
+.services ul#ulOffers p{
+    color: #555555;
+}
+.services ul#ulOffers li p{
+    color: #555555;
 }
 /*Partners*/
 .partners .card{
