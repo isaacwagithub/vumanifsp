@@ -9,7 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./public/bootstrap/css/bootstrap.min.css">
     <!-- custom styles-->
-    <link rel="stylesheet" href="./public/css/index.css">    
+    <link rel="stylesheet" href="./public/css/index.css">  
+    <script src="./public/js/jquery/dist/jquery.min.js"></script>  
+    <script src="./public/js/scripts/animation.js"></script>
     <title>Vumani Financial Service Provider</title>
   </head>
   <body>
@@ -41,7 +43,7 @@
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 web_titles">
                     <h5 class="nav-link co_name">Vumani</h5>
-                    <h5 class="nav-link" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600px;color: #4d990c;font-size:medium">Financial Services Provider</h5>  
+                    <h5 class="nav-link" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 600px;color: #28a745;font-size:medium">Financial Services Provider</h5>  
                 </div>
             </div>
         </a>
@@ -89,11 +91,13 @@
                         <br/>
                         <p>Dedicated to offering our clients a comprehensive range of solutions that provide peace of mind and financial security for various aspects of life.</p>
                         <br/>
-                        <p></p>
+                        <div class="animatedIntro">
+                            <p class="animeP"></p>
+                        </div>
                         <br/>
                         <ul class="float_btns">
-                            <li><a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a></li>
-                            <li><a href="./public/pages/Credentials.html" class="btn btn-theme2">View our credentials</a></li> 
+                            <li><a href="./public/pages/Services.html" class="btn btn-success">Learn more</a></li>
+                            <li><a href="./public/pages/Credentials.html" class="btn btn-primary">View our credentials</a></li> 
                         </ul>
                         <br/>
                         <br/>
@@ -102,8 +106,8 @@
             </div>
         </div>
         <div class="part_div index">
-            <!-- <h2 class="text-center" style="font-weight: bold; color: #102b01;">Why Partner With Vumani</h2>
-            <p class="text-center" style="color: #102b01;">Vumani financial service members receives the following benefits:</p>
+            <!-- <h2 class="text-center" style="font-weight: bold; color: #2d7a3e;">Why Partner With Vumani</h2>
+            <p class="text-center" style="color: #2d7a3e;">Vumani financial service members receives the following benefits:</p>
              -->
             <br/>
             <br/>
@@ -120,7 +124,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="cards">
                         <i class="fa fa-cross icon_size"></i> 
-                        <h3>Unveiling Ceremony Benefits</h3>
+                        <h3>Ceremony Benefits</h3>
                         <p style="font-weight: 400;">Our benefit provides cash to cover the costs of unveiling ceremonies, honoring the memory of your loved ones with financial support.</p>
                         <!-- <a href="#" class="btn btn-theme">view more</a> -->
                         <!-- <p style="font-weight: 400">Financial assistance to help prepare the ceremony without having to worry much.</p> -->
@@ -138,136 +142,261 @@
                 </div>
             </div>
         </div>
-        <div class="part_div ending_part">
-            <!-- <img src="./public/img/WhatsApp Image 2021-06-09 at 09.54.53.jpeg"> -->
-            <h2 style="display: block; width: 50%; min-height: 60px; line-height: 60px; background: #102b01; font-weight:bold;opacity:.9; color: #f4f4f4; font-size: 166%; padding-left: 10px;">Why Partner With Us</h2>
-            <h4 class="text-left" style="font-weight: 500; color: #102b01; margin-top: 0 !important;padding-top: 0 !important;">Benefits of Choosing Us as Your Partner</h4>
-            Partnering with us is a decision rooted in trust and commitment to excellence. We are dedicated to providing comprehensive solutions that not only meet your needs but exceed your expectations.
-            <p class="text-left">With a track record of reliability and a deep understanding of the services we offer, we ensure that your clients or members receive the utmost care and support during their time of need. Our commitment to quality, compassionate service, and the flexibility of our benefit plans make us the ideal partner.</p>
-            <!-- <p class="text-left">Whether you are an organization looking to enhance your services or an individual seeking to provide the best for your family, partnering with us means choosing a dependable ally that truly cares about your well-being and financial security.</p> -->
-            <p class="text-left">We are dedicated to being your trusted partner in helping you achieve your goals. By selecting us, you've made a wise choice that opens doors to a world of opportunities and solutions. Your success is our top priority, and we eagerly anticipate embarking on this journey together. Please don't hesitate to contact us with any questions or to initiate our collaboration. Thank you for choosing us as your partner, and we're excited to work with you and provide the outstanding results you deserve.</p>
-            <p class="text-muted">We're here to make your financial goals a reality. Let's achieve success together.</p>
-
-            <br/>
-        </div>
-        <div class="part_div">
-            <div class="container-fluid">
-                <div class="row servicesCardHolder">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h4 style="text-align:right;background: #102b01;width: 50%;float: right;font-weight: 500; color: #102b01; margin-top: 0 !important;padding-top: 0 !important;min-height: 60px; line-height: 60px; background: #102b01; font-weight:bold;opacity:.9; color: #f4f4f4; font-size: 136%; padding-right: 10px;">Services That We Offer</h4>
-                        <h4 style="clear: both;text-align: right;font-weight: 500; color: #102b01; margin-top: 0 !important;padding-top: 0 !important;">Our Comprehensive Service Selection</h4>
-                        <p>At <strong style="color: #102b01;">Vumani</strong>, we offer a range of essential services designed to provide financial security and peace of mind for you and your loved ones. Our services encompass various aspects of life, from funeral cover to insurance, ensuring that you have access to the support you need when it matters most. Explore our comprehensive offerings to discover how we can safeguard your future and provide comfort during challenging times.</p>
-                        <p>Our extensive range of services is here to meet your diverse needs. By exploring our service offerings, you've taken the first step toward accessing a wealth of solutions tailored to your requirements. We are fully dedicated to helping you make the most of these services and are excited to start this journey with you. If you have any questions or are ready to utilize our services, please don't hesitate to get in touch. Thank you for considering our diverse service selection, and we look forward to working with you to achieve your goals.</p>
-                        <p class="text-left text-muted">Tailored services for your diverse needs.</p>
-                    </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <br/>
-                        <h3 style="font-weight: 700;color:#102b01;">Discover Our Services Our Services</h3>
-                        <p>Discover our diverse range of customized solutions tailored to meet your unique needs.</p>
-                        <br/>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 serviceTypes" style="border-right: none;">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Funeral Service</h5>
-                            </div>
-                            <div class="card-body">
-                                <img src="./public/img/gettyimages-173195530-612x612.jpg" class="img_services">
-                            </div>
-                            <div class="card-footer">
-                                <h4>Family Funeral Cover </h4>
-                                <p>Extend protection to your cherished ones from infancy through to their centenary year with our family funeral cover where you can cover your loved ones from the age of 0 to 100.</p>
-                                <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
-                                <br/>
-                            </div>
-                        </div>
-                        <br/>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Training Services</h5>
-                            </div>
-                            <div class="card-body">
-                                <img src="./public/img/pexels-christina-morillo-1181396.jpg" class="img_services">
-                            </div>
-                            <div class="card-footer">
-                                <h4>Vumani Careers</h4>
-                                <p>Discover lifelong learning opportunities with our skill acquisition programs. From early development to lifelong growth, we're here to help you acquire essential skills at any age. </p>
-                                <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
-                                <br/>
-                            </div>
-                        </div>
-                        <br/>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Intermediary Services</h5>
-                            </div>
-                            <div class="card-body">
-                                <img src="./public/img/pexels-kindel-media-7578914.jpg" class="img_services">
-                            </div>
-                            <div class="card-footer">
-                                <h4>Trusted Brokers</h4>
-                                <p>Acting as intermediaries, our trusted brokers establish a vital link between product suppliers and clients.With our expertise, we facilitate seamless transactions, ensuring your needs are met effectively and efficiently.</p>
-                                <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
-                                <br/>
-                            </div>
-                        </div>
-                        <br/>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>Life Cover Services</h5>
-                            </div>
-                            <div class="card-body">
-                                <img src="./public/img/pexels-august-de-richelieu-4261783.jpg" class="img_services">
-                            </div>
-                            <div class="card-footer">
-                                <h4>Life Cover</h4>
-                                <p>Discover the finest life cover plans with us. We are dedicated to providing comprehensive life insurance options, ensuring the security and well-being of you and your loved ones.</p>
-                                <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
-                                <br/>
-                            </div>
-                        </div>
-                        <br/>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="part_div ending_part">
-            <br/>
-            <br/>
-            <!-- <img src="public/img/WhatsApp Image 2021-06-09 at 09.54.53.jpeg"> -->
-            <h3 class="text-center" style="color: #102b01;font-weight:bold;opacity:.9;font-size:200%;">Our Commitment</h3>
-            <p class="text-center" style="padding: 0 4%;">At the core of our service plan is a meticulously designed system, the result of years of dedicated research. We are unwaveringly committed to serving our members as the primary source of strength during challenging moments.</p>
-            <br/>
-            <br/>
-        </div>
-        <div class="part_div">
+        <div class="part_div ending_part" style="padding: 0% !important;margin-top: 4%;">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <img src="public/img/pexels-hannah-nelson-1456951.jpg" style="width: 100%;height: 580px;border: 6px solid #999;">
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="card chooseUs" style="height: 580px;overflow-y: hidden;padding: 0% !important; margin: 0%;border: 1px solid #f7f7f7;">
+                        <div class="card-header" style="background: #2d7a3e;padding: 3%;">
+                            <h3 style="color: #fff;font-weight:bold;font-size: 140%;">Why Choose Vumani</h3>
+                        </div>
+                        <div class="card-body" style="padding: 3%;">
+                            <h4 class="text-left" style="font-weight: 400; color: #555; margin-top: 0 !important;padding-top: 0 !important;">Discover the Advantages of Partnering with Us</h4>
+                            <p class="text-left">With a proven record of reliability and deep service expertise, we assure unmatched care and support. Our dedication to excellence, empathy, and flexible benefit plans makes us the optimal choice for your needs.</p>
+                            <h4 style="float:left !important;width: auto;margin-bottom:4px;color: #555;font-weight:400;">Our Partners</h4>
+                            <p style="clear:both;">Embark on a journey of success with our valued partners.</p>
+                            <ol style="clear:both;">
+                                <li><img src="./public/img/partners/assupol-new-logo_news_22375_16767.jpg" style="width: 100%;height:100%;"></li>
+                                <li><img src="./public/img/partners/logo-clientele-life.png" style="width: 100%;height:100%;"></li>
+                                <li><img src="./public/img/partners/OldMutual.jpg" style="width: 100%;height:100%;"></li>
+                                <li><img src="./public/img/partners/Sanlam.png" style="width: 100%;height:100%;"></li>
+                            </ol>
+                            <p style="clear:both;">As we proudly showcase our esteemed partners, it is a testament to the trust and reliability that underpin our commitment to service excellence. Rest assured, our enduring partnerships reflect the foundation upon which you can confidently rely for unwavering support and trusted financial services. </p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- <p class="text-left">Whether you are an organization looking to enhance your services or an individual seeking to provide the best for your family, partnering with us means choosing a dependable ally that truly cares about your well-being and financial security.</p> -->
+                            
+                            <p>We're here to make your financial goals a reality. Let's achieve success together.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 listPartners">
-                    <h2 class="text-left" style="display: block; width: 100%; min-height: 60px; line-height: 60px; background: #102b01; font-weight:bold;opacity:.9; color: #f4f4f4; font-size: 140%; padding-left: 10px;">A Dedicated Financial Service Provider</h2>
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="backgroundPartner" style="height: 580px;">
+                        <span class="opaqueCover" style="color:#fff;position:absolute;width:96%;height:100%;opacity: .80;background:rgb(61, 59, 59)">
+                            <div class="card" style="background:none !important;height: 580px;overflow-y: hidden;">
+                                <div class="card-header" style="background:none !important;padding: 3%;">
+                                    <ol>
+                                        <li style="float:left !important;width: auto;"><p style="font-weight:bold;font-size: 150%;">Our Support Team</p></li>
+                                        <li><img src="./public/img/partners/staff1.jpg" style="width: 50px;height:50px;"></li>
+                                        <li><img src="./public/img/partners/staff2.jpg" style="width: 50px;height:50px;"></li>
+                                        <li><img src="./public/img/partners/staff3.jpg" style="width: 50px;height:50px;"></li>
+                                        <li><img src="./public/img/partners/staff4.jpg" style="width: 50px;height:50px;"></li>
+                                    </ol>
+                                    <br/>
+                                    <p style="clear:both;text-align:right;font-weight: 400;font-size: 98%;background: rgb(57, 63, 63)">Get financial assistance from experts.</p>
+
+                                    <br/>
+                                </div>
+                                <div class="card-body" style="padding: 3%;">
+                                    <div class="centerContent">
+                                        <h3 style="margin-top: 16%;text-align:center;font-weight: bold;font-size: 178%;background: rgb(57, 63, 63)">Have A Seat With Us</h3>
+                                        <p style="text-align:center;color: #fff !important;">We listen to your goals, assess your financial landscape, and offer strategic advice to help you make informed decisions.</p>
+                                    </div>
+                                    <br/>
+                                    <div class="animatedContent">
+                                        <p class="animeP" style="text-align:center;color: #fff !important;"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="./public/img/WhatsApp Image 2021-06-09 at 09.54.53.jpeg"> -->
+            <br/>
+        </div>
+        <div class="part_div ending_part" style="padding: 0% !important;margin-top: 4%;">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3 style="font-weight: bold;color: #555;font-size: 180%;">Our Services</h3>
+                    <p>Explore a comprehensive suite of financial services tailored to meet your unique needs</p>
                     <br/>
-                    <h3 class="text-left padding-left" style="font-weight:bold;opacity:.9;;font-size:140%;">Have A Peace Of Mind</h3>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="backgroundServices" style="height: 580px;">
+                        <span class="opaqueCover" style="color:#fff;position:absolute;width:96%;height:100%;opacity: .80;background:rgb(61, 59, 59)">
+                            <div class="card" style="background:none !important;height: 580px;overflow-y: hidden;">
+                                <div class="card-header" style="background:none !important;padding: 3%;">
+                                    <p style="font-weight:bold;font-size: 150%;">Discover Our Services</p>
+                                    <p style="clear:both;text-align:left;font-weight: 400;font-size: 98%;background: rgb(57, 63, 63)">Discover our diverse range of customized solutions tailored to meet your unique needs.</p>
+                                </div>
+                                <div class="card-body" style="padding: 3%;">
+                                    <ol>
+                                        <li>
+                                            <span></span>
+                                            <p>Financial Planning</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>Investment Management</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>Insurance Services</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>Tax Planning and Preparation</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>Real Estate Services</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>Business Financial Services</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>Financial Education and Counseling</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>Loans and Credit Services</p>
+                                        </li>
+                                        <li>
+                                            <span></span>
+                                            <p>And More...</p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="card chooseUs" style="height: 580px;overflow-y: hidden;padding: 0% !important; margin: 0%;border: 1px solid #f7f7f7;">
+                        <div class="card-header" style="background: #2d7a3e;padding: 3%;">
+                            <h3 style="color: #fff;font-weight:bold;font-size: 140%;">Services That We Offer</h3>
+                        </div>
+                        <div class="card-body" style="padding: 3%;">
+                            <h4 style="clear: both;text-align: left;font-weight: 500; color: #555; margin-top: 0 !important;padding-top: 0 !important;">Our Comprehensive Service Selection</h4>
+                            <p>We offer a range of essential services designed to provide financial security and peace of mind for you and your loved ones. Our services encompass various aspects of life, from funeral cover to insurance, ensuring that you have access to the support you need when it matters most. Explore our comprehensive offerings to discover how we can safeguard your future and provide comfort during challenging times.</p>
+                            <p>Our extensive range of services is here to meet your diverse needs. By exploring our service offerings, you've taken the first step toward accessing a wealth of solutions tailored to your requirements. We are fully dedicated to helping you make the most of these services and are excited to start this journey with you. If you have any questions or are ready to utilize our services, please don't hesitate to get in touch.</p>
+                            <br/>
+                            <p>Thank you for considering our diverse service selection, and we look forward to working with you to achieve your goals.</p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- <p class="text-left">Whether you are an organization looking to enhance your services or an individual seeking to provide the best for your family, partnering with us means choosing a dependable ally that truly cares about your well-being and financial security.</p> -->
+                            <p class="text-left">Tailored services for your diverse needs.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="./public/img/WhatsApp Image 2021-06-09 at 09.54.53.jpeg"> -->
+            <br/>
+        </div>
+        <div class="part_div">
+            <div class="row servicesCardHolder">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 serviceTypes" style="border-right: none;">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Funeral Service</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./public/img/gettyimages-173195530-612x612.jpg" class="img_services">
+                        </div>
+                        <div class="card-footer">
+                            <h4>Family Funeral Cover </h4>
+                            <p>Extend protection to your cherished ones from infancy through to their centenary year with our family funeral cover where you can cover your loved ones from the age of 0 to 100.</p>
+                            <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
+                            <br/>
+                        </div>
+                    </div>
                     <br/>
-                    <p class="padding-left">Enjoy a life filled with health and happiness, secure in the knowledge that Vumani stands beside you. Our company is dedicated to providing fair treatment for clients, fostering enduring relationships, and guaranteeing business continuity and prosperity for future generations.</p>                  <br/>
-                    <h5 class="padding-left" style="clear: both;padding-top: 10px;font-weight:bold;opacity: .9;font-size: x-large;">Vumani Partners</h5>
-                    <p class="padding-left" style="font-weight: 500;opacity:.9;clear: both;padding-top: 0px;">We've established invaluable partnerships to deliver top-tier services to you. Explore the list of our trusted partners below.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Training Services</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./public/img/pexels-christina-morillo-1181396.jpg" class="img_services">
+                        </div>
+                        <div class="card-footer">
+                            <h4>Vumani Careers</h4>
+                            <p>Discover lifelong learning opportunities with our skill acquisition programs. From early development to lifelong growth, we're here to help you acquire essential skills at any age. </p>
+                            <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
+                            <br/>
+                        </div>
+                    </div>
                     <br/>
-                    <p class="padding-left"><span></span> Old Mutual</p>
-                    <p class="padding-left"><span></span> Clientele Life</p>
-                    <p class="padding-left"><span></span> African Unity</p>
-                    <p class="padding-left"><span></span> Assupol</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Intermediary Services</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./public/img/pexels-kindel-media-7578914.jpg" class="img_services">
+                        </div>
+                        <div class="card-footer">
+                            <h4>Trusted Brokers</h4>
+                            <p>Acting as intermediaries, our trusted brokers establish a vital link between product suppliers and clients.We facilitate seamless transactions, ensuring your needs are met effectively and efficiently.</p>
+                            <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
+                            <br/>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5>Life Cover Services</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./public/img/pexels-august-de-richelieu-4261783.jpg" class="img_services">
+                        </div>
+                        <div class="card-footer">
+                            <h4>Life Cover</h4>
+                            <p>Discover the finest life cover plans with us. We are dedicated to providing comprehensive life insurance options, ensuring the security and well-being of you and your loved ones.</p>
+                            <a href="./public/pages/Services.html" class="btn btn-theme">Learn more</a>
+                            <br/>
+                        </div>
+                    </div>
                     <br/>
                 </div>
             </div>
         </div>
+        <div class="part_div ending_part" style="padding: 0% !important;margin-top: 4%;">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h3 style="color: #555;font-weight:bold;opacity:.9;font-size:200%;">Our Commitment</h3>
+                    <p style="padding: 0 0%;">At the core of our service plan is a meticulously designed system, the result of years of dedicated research. We are unwaveringly committed to serving our members as the primary source of strength during challenging moments.</p>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="card chooseUs" style="height: 580px;overflow-y: hidden;padding: 0% !important; margin: 0%;border: 1px solid #f7f7f7;">
+                        <div class="card-header" style="background: #2d7a3e;padding: 3%;">
+                            <h3 style="color: #fff;font-weight:bold;font-size: 140%;">A Dedicated Financial Service Provider</h3>
+                        </div>
+                        <div class="card-body" style="padding: 3%;">
+                            <h3 class="text-left" style="font-weight:bold;opacity:.9;;font-size:140%;color: #555;">Have A Peace Of Mind</h3>
+                            <p >Enjoy a life filled with health and happiness, secure in the knowledge that Vumani stands beside you. Our company is dedicated to providing fair treatment for clients, fostering enduring relationships, and guaranteeing business continuity and prosperity for future generations.</p>                  <br/>
+                            <h5 style="clear: both;padding-top: 10px;font-weight:bold;opacity: .9;font-size: x-large;color: #555;">Vumani Partners</h5>
+                            <p style="font-weight: 500;opacity:.9;clear: both;padding-top: 0px;">We've established invaluable partnerships to deliver top-tier services to you. Explore the list of our trusted partners below.</p>
+                            <p><span></span> Old Mutual</p>
+                            <p><span></span> Clientele Life</p>
+                            <p><span></span> Assupol</p>
+                        </div>
+                        <div class="card-footer">
+                            <!-- <p class="text-left">Whether you are an organization looking to enhance your services or an individual seeking to provide the best for your family, partnering with us means choosing a dependable ally that truly cares about your well-being and financial security.</p> -->
+                            <p class="text-left">Tailored services for your diverse needs.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                    <div class="backgroundClosing" style="height: 580px;">
+                        <span class="opaqueCover" style="color:#fff;position:absolute;width:96%;height:100%;opacity: .80;background:rgb(61, 59, 59)">
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="./public/img/WhatsApp Image 2021-06-09 at 09.54.53.jpeg"> -->
+            <br/>
+        </div>
+        
         <div class="part_div ending_part">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <br/>

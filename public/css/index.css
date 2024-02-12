@@ -1,6 +1,6 @@
 .bg-light {
     background-color: #fff!important;
-    border-bottom: 4px solid #4d990c;
+    border-bottom: 4px solid #2d7a3e;
 }
 .bg-light a.navbar-brand .row{
     width: 280px;
@@ -19,7 +19,7 @@
     margin: 0;
     padding: 0;
     border-radius: 100%;
-    border-bottom: 5px solid #4d990c;
+    border-bottom: 5px solid #2d7a3e;
 }
 .bg-light a.navbar-brand .row .col-lg-3{
     padding-left: 0;
@@ -33,6 +33,11 @@
     margin-left: 0;
     margin-right: 0;
 }
+.btn-success {
+    color: #fff;
+    background-color: #2d7a3e;
+    border-color: #2d7a3e;
+  }
 .top_nav{
     display: block;
     width: 100%;
@@ -64,7 +69,7 @@
     padding: 0;
     height: 20px;
     line-height: 30px;
-    color:#102b01;
+    color:#2d7a3e !important;
     font-weight: 500;
     font-size: 84%;
 }
@@ -72,7 +77,7 @@
     padding: 0;
     height: 20px;
     line-height: 26px;
-    color:#4d990c;
+    color:#2d7a3e;
     font-weight: bold;
     font-size: 150%;
 }
@@ -80,7 +85,7 @@ a.active_page{
     width: 100px;
     height: 36px;
     line-height: 110%;
-    background: #4d990c;
+    background: #2d7a3e;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -174,9 +179,12 @@ a.active_page{
     height: 200px;
     padding: 1%;
 }
+.card .card-body p{
+    color: #555;
+}
 .btn-theme{
     color: #f0f0f0;
-    background: #102b01;
+    background: #2d7a3e;
     border: 1px solid #f4f4f4;
 }
 a.btn-theme2{
@@ -201,12 +209,140 @@ a.btn-theme2{
 }
 .icon_size{
     font-size: 280%;
-    color: #1c1d1b;
+    color: #2d7a3e;
     padding-top: 2%;
     padding-bottom: 4%;
 }
 .index .cards h3{
-    color: #102b01;
+    color: #555;
+}
+.chooseUs p,.chooseUs h4{
+    font-weight: 300;
+}
+.chooseUs ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.chooseUs ol li{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #f7f7f7;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 3px;
+}
+.chooseUs ol li img{
+    margin: 0 !important;
+    border: 0px solid #f7f7f7;
+    border-radius: 0% !important;
+}
+
+
+div.backgroundPartner{
+    width: auto;
+    height: 580px;
+    background: url(../img/partners/pexels-alexander-suhorucov-6457495.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.backgroundClosing{
+    width: auto;
+    height: 580px;
+    background: url("../img/pexels-hannah-nelson-1456951.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.backgroundClosing .opaqueCover{
+    opacity: .6 !important;
+}
+div.backgroundServices{
+    width: auto;
+    height: 580px;
+    background: url("../img/pexels-askar-abayev-6190858(1).jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+div.backgroundServices .card-body ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div.backgroundServices .card-body ol li{
+    clear: both;
+    display: block;
+    float: none;
+    width: 100%;
+    border-radius: 0px;
+}
+div.backgroundServices .card-body ol li span{
+    color: #fff;
+    display: block;
+    float:left !important;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: #fff;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+div.backgroundServices .card-body ol li p{
+    color: #fff;
+    width: 90%;
+    float: left;
+}
+
+.backgroundPartner .card ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.backgroundPartner .card ol li{
+    display: block;
+    float: right;
+    width: 10%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.backgroundPartner .card ol li img{
+    margin: 0 !important;
+    border: 1px solid #f7f7f7;
+}
+.animePText{
+    animation: fadeInText 1000ms ease-in-out;
+}
+@keyframes fadeInText{
+    0% { 
+        opacity: 0; 
+        font-size: 0px;
+        transform: rotateX(0); 
+    }
+    25%{
+        opacity: 0.25; 
+        font-size: 25%;
+        transform: rotateY(90); 
+    }
+    50%{
+        opacity: 0.50; 
+        font-size: 50%;
+        transform: rotateY(180); 
+    }
+    75%{
+        opacity: 0.75; 
+        font-size: 75%;
+        transform: rotateY(270); 
+    }
+    100% { 
+        opacity: 1; 
+        font-size: 18px;
+        transform: rotateY(360deg); 
+
+    }
 }
 .white_icon{
     color: #fff;
@@ -216,13 +352,27 @@ a.btn-theme2{
     margin: 0;
     padding: 0;
     height: auto;
+    text-align: center !important;
+
     /* border: 0; */
 }
 .servicesCardHolder .card .card-header{
     border: 1px solid #bebcbc !important;
+    text-align: center !important;
+
+}
+.servicesCardHolder .card .card-header h5{
+    text-align: center !important;
+}
+.servicesCardHolder .card .card-footer h4{
+    font-weight: 600 !important;
+    color: #555 !important;
+
 }
 .servicesCardHolder .card .card-footer p{
-    text-align: left !important;
+    text-align: center !important;
+    color: #555 !important;
+
 }
 
 .home .card{
@@ -271,7 +421,7 @@ a.btn-theme2{
     opacity: .95;
 }
 .home .card .card-footer .btn-theme{
-    background: #102b01;
+    background: #2d7a3e;
     opacity: .91;
     margin-bottom: 5%;
 }
@@ -315,7 +465,7 @@ a.btn-theme2{
     font-size: large;
 }
 .ending_part h2{
-    color:#102b01;
+    background:#2d7a3e;
     font-weight: bold;
 }
 .ending_part img{
@@ -324,7 +474,7 @@ a.btn-theme2{
     margin: 1% 47%;
     padding: 0;
     border-radius: 100%;
-    border-bottom: 6px solid #4d990c;
+    border-bottom: 6px solid #2d7a3e;
 }
 .partnerslist ul{
     margin: 0;
@@ -349,15 +499,30 @@ ul.partnerslist li img.faces{
     float: left;
     width: 8px;
     height: 8px;
-    background: #102b01;
+    background: #2d7a3e;
     border-radius: 50%;
     margin: 10px 1%;
 
 }
+.servicesCardHolder .card{
+    border: 1px solid #c8cac5 !important;
+}
 .servicesCardHolder .card-header{
-    background: #102b01 !important;
+    background: #418650 !important;
     color: #ffffff !important;
     opacity: 1;
+}
+.servicesCardHolder .card-footer p{
+    max-height: 144px;
+    overflow-y: hidden;
+    text-overflow: ellipsis !important;
+}
+.servicesCardHolder .card-footer{
+    background: #fff !important;
+    max-height: 270px;
+}
+.servicesCardHolder .card-footer .btn{
+    margin-bottom: 20px !important;
 }
 .servicesCardHolder .card-header h5{
     font-weight: 500 !important;
@@ -372,7 +537,7 @@ ul.partnerslist li img.faces{
     width: 8px;
     height: 8px;
     float: left;
-    background: #102b01;
+    background: #2d7a3e;
     border-radius: 50%;
     margin-right: 6px;
     margin-top: 10px;
@@ -408,7 +573,7 @@ ul.partnerslist li img.faces{
 .about_block .card .card-body p span{
     width: 8px;
     height: 8px;
-    background: #102b01;
+    background: #2d7a3e;
     margin-top: 2px;
     border-radius: 50%;
 }
@@ -455,7 +620,7 @@ ul.ul_offers li p span{
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #4d990c;
+    background: #2d7a3e;
     margin-right: 10px;
 }
 .aboutus .card{
@@ -463,7 +628,7 @@ ul.ul_offers li p span{
 }
 .aboutus .card .card-header{
     border: none;
-    background: #102b01;
+    background: #2d7a3e;
     opacity: .9;
 }
 
@@ -490,11 +655,11 @@ ul.ul_offers li p span{
     border-bottom: 1px solid #999999;
 }
 .ul_cards li div.card .card-header img.card-img-top{
-    width: 50% !important;
-    height: 134px;
-    margin: 4% 25% !important;
+    width: 100% !important;
+    height: 154px;
+    margin: 0% !important;
     padding: 0 !important;
-    border-radius: 50%;
+    border-radius: 0%;
 }
 .ul_cards li div.card .card-img-top img{
     width: 20% !important;
@@ -564,7 +729,7 @@ ul.ul_offers li p span{
     padding-top: 10px;
     font-weight: bold;
     font-size: x-large;
-    color: #102b01;
+    color: #2d7a3e;
 }
 .credintials .card .card-body p{
     text-align: left;
@@ -573,7 +738,7 @@ ul.ul_offers li p span{
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #102b01;
+    background: #2d7a3e;
     border-radius: 100%;
     margin: 0 2%;
 }
@@ -597,18 +762,18 @@ ul.ul_offers li p span{
     border-radius: 50px;
 }
 .tab_active{
-    background: #102b01!important;
+    background: #2d7a3e!important;
     color: #ffffff!important;
     border-radius: 0;
-    border: 2px solid #102b01!important;
+    border: 2px solid #2d7a3e!important;
 }
 .nav-tabs .nav-link a{
     border-top-left-radius: .0rem;
     border-top-right-radius: .0rem;
-    color: green;
+    color: #2d7a3e;
 }
 .nav-tabs a.service:hover{
-    background-color: #102b01;   
+    background-color: #2d7a3e;   
 }
 .tab-content{
     border-top: 2px solid #c0c0c0;
@@ -620,10 +785,10 @@ ul.nav-tabs li{
     border-radius: 1px;
 }
 ul.nav-tabs li a.service{
-    background: #174001;
+    background: #999;
     color: #fff!important;
     border-radius: inherit;
-    border: 2px solid #174001;
+    border: 2px solid #999;
 }
 ul.service_li{
    margin: 0;
@@ -639,7 +804,7 @@ ul.service_li li{
    border-bottom: 1px solid #999;
 }
 .services .card .card-header{
-    background: #4d990c;
+    background: #2d7a3e;
     color:#f0f0f0;
     opacity: .9;
 }
@@ -665,7 +830,7 @@ ul.service_li li{
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #102b01;
+    background: #2d7a3e;
     margin-right: 10px;
 }
 .services ul#ulOffers .row img{
@@ -717,7 +882,7 @@ ul.service_li li{
     display: inline-block;
     width: 50px;
     height: 50px;
-    background: #102b01;
+    background: #2d7a3e;
     line-height: 50px;
     color: #fff;
     font-weight: bold;
@@ -729,7 +894,7 @@ ul.service_li li{
 }
 /*Contact*/
 .contact .card .card-header{
-    background: #102b01;
+    background: #2d7a3e;
     color:#f0f0f0;
     opacity: .92;
 }
