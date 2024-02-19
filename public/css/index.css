@@ -465,7 +465,7 @@ div.backgroundServices .card-body ol li p{
     font-size: large;
 }
 .ending_part h2{
-    background:#2d7a3e;
+    color:#2d7a3e;
     font-weight: bold;
 }
 .ending_part img{
@@ -744,8 +744,8 @@ ul.ul_offers li p span{
 }
 .credintials .card .card-body img{
     width: 40%;
-    height: 140px;
-    margin: 2% 15%;
+    height: 136px;
+    margin: 0% 15%;
 }
 .credintials .card .card-body .btn-theme{
     line-height: 150%;
@@ -928,10 +928,14 @@ ul.service_li li{
     padding-left: 10px;
 }
 footer{
-    background: #222;
+    background: #2f3937;
     color: #d9d9d9;
     min-height: 280px;
     padding: 1%;
+}
+footer h4{
+    margin-top: 6% !important;
+    font-weight: 400;
 }
 footer hr{
     color: #fff;
